@@ -25,4 +25,14 @@ Route::view('/divinity', 'divinity')->name('divinity');
 
 Route::get('/character_creator', [CharacterCreatorController::class, 'index'])->name('character_creator');
 
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
 
+    Route::view('/gm/main', 'gm-main')->name('gm-main');
+
+
+
+});

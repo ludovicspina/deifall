@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
-
+    <title>Deifall</title>
+    <link rel="icon" href="{{asset('images/deifall.png')}}">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet"/>
@@ -17,7 +17,7 @@
 <div class="border border-b pb-4 mb-4 border-neutral-600">
 
     <div class="flex flex-col items-center">
-        <div class="text-2xl font-semibold">Monde de Cactema</div>
+        <div class="text-2xl font-semibold">Deifall</div>
         <div class="font-semibold">Medieval - Fantasy - Steampunk</div>
     </div>
     <div class="flex justify-center gap-6">

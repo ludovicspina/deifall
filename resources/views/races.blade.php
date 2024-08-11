@@ -4,7 +4,7 @@
 
         <div>
             <div class="text-xl">Généralités sur les races</div>
-            <div>De nombreuses races cohabitent au sein de Cactema, même si la popularité de certaines sont en déclin.
+            <div>De nombreuses races cohabitent au sein de Deifall, même si la popularité de certaines sont en déclin.
             </div>
         </div>
     </div>

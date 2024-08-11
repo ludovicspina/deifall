@@ -35,6 +35,10 @@
         }
     },
     "scripts": {
+        "post-install-cmd": [
+            "npm install",
+            "npm run prod"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -47,7 +51,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
     },
     "extra": {
         "laravel": {

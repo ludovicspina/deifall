@@ -1,10 +1,12 @@
 @extends('base')
 @section('content')
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-1">
         <div class="flex justify-center">
+            <!--
             <img src="{{ asset('images/map_cactema.png') }}">
+            -->
         </div>
-        <div class="flex flex-col gap-2 text-xl justify-center items-center pr-8">
+        <div class="flex flex-col gap-4 lg:text-center pl-4 text-xl lg:mx-64 justify-center items-center pr-8">
             <div>Dans le monde mystérieux de Deifall, la magie et la technologie coexistent dans une harmonie précaire,
                 façonnée par de nombreuses divinités.
             </div>

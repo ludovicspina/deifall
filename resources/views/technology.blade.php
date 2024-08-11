@@ -1,9 +1,9 @@
 @extends('base')
 @section('content')
-    <div class="pl-16">
+    <div class="pl-4">
 
-        <div>
-            <div class="text-xl mb-3">Généralités sur la technologie</div>
+        <div class="text-xl lg:text-base">
+            <div class="text-2xl lg:text-xl flex flex-col mb-3">Généralités sur la technologie</div>
 
             <div class="mb-2">La technologie est principalement liée au dieux Ergoth et Orgath même si d'autre création peuvent être surprenantes.
             </div>

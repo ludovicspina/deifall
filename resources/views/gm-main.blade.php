@@ -1,11 +1,11 @@
 @extends('base')
 @section('content')
-    <div class="pl-16 flex gap-10">
+    <div class="pl-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
 
         <div>
             <!-- Dices roll -->
             <fieldset
-                class="border border-black flex w-64 cursor-pointer select-none hover:scale-110 transition transform"
+                class="border border-black flex w-80 cursor-pointer select-none hover:scale-110 transition transform"
                 onclick="roll20()">
                 <legend>
                     <button class="px-2" id="roll20">Roll20 :</button>
@@ -19,7 +19,7 @@
                 </table>
             </fieldset>
             <fieldset
-                class="border border-black flex w-64 cursor-pointer select-none hover:scale-110 transition transform"
+                class="border border-black flex w-80 cursor-pointer select-none hover:scale-110 transition transform"
                 onclick="roll6()">
                 <legend>
                     <button class="px-2" id="roll6">Roll6 :</button>
@@ -33,7 +33,7 @@
                 </table>
             </fieldset>
             <fieldset
-                class="border border-black flex w-64 cursor-pointer select-none hover:scale-110 transition transform"
+                class="border border-black flex w-80 cursor-pointer select-none hover:scale-110 transition transform"
                 onclick="roll4()">
                 <legend>
                     <button class="px-2" id="roll4">Roll4 :</button>
@@ -47,7 +47,7 @@
                 </table>
             </fieldset>
             <fieldset
-                class="border border-black flex w-64 cursor-pointer select-none hover:scale-110 transition transform"
+                class="border border-black flex w-80 cursor-pointer select-none hover:scale-110 transition transform"
                 onclick="roll2()">
                 <legend>
                     <button class="px-2" id="roll2">Roll2 :</button>
@@ -65,13 +65,13 @@
         <div>
             <!-- Ennemies -->
             <fieldset
-                class="border border-black flex">
+                class="border border-black flex w-80 lg:w-full">
                 <legend>
                     <div class="px-2">Ennemies</div>
                 </legend>
                 <table>
                     <tr>
-                        <td class="flex gap-4">
+                        <td class="grid grid-cols-3 lg:grid-cols-1 gap-4">
                             <button onclick="createEnemy(0, 1, 'T1')">Tier1</button>
                             <button onclick="createEnemy(8, 1.5, 'T2')">Tier2</button>
                             <button onclick="createEnemy(12, 2, 'T3')">Tier3</button>
@@ -88,7 +88,7 @@
                     </tr>
                 </table>
             </fieldset>
-
+            <!-- End ennemies -->
         </div>
     </div>
 
@@ -218,19 +218,19 @@
             var td = document.createElement("td")
             td.classList.add("grid", "grid-cols-6", "gap-2")
             var docStrength = document.createElement("div")
-            docStrength.textContent = "FOR : " + strength.toString();
+            docStrength.textContent = "FOR " + strength.toString();
             var docDexterity = document.createElement("div")
-            docDexterity.textContent = "DEX : " + dexterity.toString();
+            docDexterity.textContent = "DEX " + dexterity.toString();
             var docConstitution = document.createElement("div")
-            docConstitution.textContent = "CON : " + constitution.toString();
+            docConstitution.textContent = "CON " + constitution.toString();
             var docIntelligence = document.createElement("div")
-            docIntelligence.textContent = "INT : " + intelligence.toString();
+            docIntelligence.textContent = "INT " + intelligence.toString();
             var docWisdom = document.createElement("div")
-            docWisdom.textContent = "SAG : " + wisdom.toString();
+            docWisdom.textContent = "SAG " + wisdom.toString();
             var docCharisma = document.createElement("div")
-            docCharisma.textContent = "CHA : " + charisma.toString();
+            docCharisma.textContent = "CHA " + charisma.toString();
             var docHealth = document.createElement("div")
-            docHealth.textContent = "PDV : " + health.toString();
+            docHealth.textContent = "PDV " + health.toString();
 
             fieldset.appendChild(legend);
             legend.appendChild(removeDiv);

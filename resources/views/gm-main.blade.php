@@ -1,6 +1,6 @@
 @extends('base')
 @section('content')
-    <div class="pl-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="pl-8 grid grid-cols-1 lg:grid-cols-4 gap-10">
 
         <div>
             <!-- Dices roll -->
@@ -65,13 +65,13 @@
         <div>
             <!-- Ennemies -->
             <fieldset
-                class="border border-black flex w-80 lg:w-full">
+                class="border border-black flex w-3/4">
                 <legend>
                     <div class="px-2">Ennemies</div>
                 </legend>
                 <table>
                     <tr>
-                        <td class="grid grid-cols-3 lg:grid-cols-1 gap-4">
+                        <td class="grid grid-cols-3 lg:grid-cols-6 col-span-3 gap-4">
                             <button onclick="createEnemy(0, 1, 'T1')">Tier1</button>
                             <button onclick="createEnemy(8, 1.5, 'T2')">Tier2</button>
                             <button onclick="createEnemy(12, 2, 'T3')">Tier3</button>
@@ -83,7 +83,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="enemies">
+                        <td id="enemies" class="grid grid-cols-1 lg:grid-cols-3">
                         </td>
                     </tr>
                 </table>

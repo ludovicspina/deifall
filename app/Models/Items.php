@@ -16,7 +16,7 @@ class Items extends Model
 
     // Ajoute les champs que tu souhaites autoriser à la mass assignment
     protected $fillable = [
-        'id', // Ajoute 'id' ici pour éviter l'erreur
+
         'name',
         'description',
         'STR',

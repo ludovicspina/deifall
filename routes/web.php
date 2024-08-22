@@ -36,8 +36,7 @@ Route::middleware([
     Route::view('/gm/main', 'gm-main')->name('gm-main');
     Route::get('/adventures/create', [AdventureController::class, 'create'])->name('adventures.create');
     Route::post('/adventures', [AdventureController::class, 'store'])->name('adventures.store');
-    Route::get('/items/create', [ItemController::class, 'create'])->name('items.create');
-    Route::post('/items', [ItemController::class, 'store'])->name('items.store');
+    Route::get('/items', [ItemController::class, 'index'])->name('items.index');
 
 
 

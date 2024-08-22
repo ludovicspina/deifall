@@ -41,8 +41,8 @@
                href="{{ route('gm-main') }}">Main</a>
             <a class="hover:underline border border-black lg:border-none {{ request()->is('adventures/create') ? 'text-blue-600':'' }}"
                href="{{ route('adventures.create') }}">C Adventure</a>
-            <a class="hover:underline border border-black lg:border-none {{ request()->is('items/create') ? 'text-blue-600':'' }}"
-               href="{{ route('items.create') }}">C Items</a>
+            <a class="hover:underline border border-black lg:border-none {{ request()->is('items/index') ? 'text-blue-600':'' }}"
+               href="{{ route('items.index') }}">C Items</a>
 
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

@@ -11,4 +11,19 @@ class Items extends Model
     {
         return $this->belongsToMany(Characters::class)->withPivot('quantity')->withTimestamps();
     }
+
+    use HasFactory;
+
+    // Ajoute les champs que tu souhaites autoriser à la mass assignment
+    protected $fillable = [
+        'id', // Ajoute 'id' ici pour éviter l'erreur
+        'name',
+        'description',
+        'STR',
+        'DEX',
+        'CON',
+        'INT',
+        'SAG',
+        'CHA'
+    ];
 }

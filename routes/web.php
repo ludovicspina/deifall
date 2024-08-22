@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdventureController;
 use App\Http\Controllers\CharacterCreatorController;
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +34,10 @@ Route::middleware([
 ])->group(function () {
 
     Route::view('/gm/main', 'gm-main')->name('gm-main');
+    Route::get('/adventures/create', [AdventureController::class, 'create'])->name('adventures.create');
+    Route::post('/adventures', [AdventureController::class, 'store'])->name('adventures.store');
+    Route::get('/items/create', [ItemController::class, 'create'])->name('items.create');
+    Route::post('/items', [ItemController::class, 'store'])->name('items.store');
 
 
 

@@ -2,6 +2,10 @@
 @section('content')
     <div class="pl-8 grid grid-cols-1 lg:grid-cols-4 gap-10">
 
+        <ruby>
+            16 <rp>(</rp><rt>Charisme</rt><rp>)</rp>
+        </ruby>
+
         <div>
             <!-- Dices roll -->
             <fieldset
@@ -83,7 +87,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="enemies" class="grid grid-cols-1 lg:grid-cols-3">
+                        <td id="enemies" class="grid grid-cols-3 lg:grid-cols-1">
                         </td>
                     </tr>
                 </table>

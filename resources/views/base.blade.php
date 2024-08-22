@@ -39,8 +39,11 @@
 
             <a class="hover:underline border border-black lg:border-none {{ request()->is('gm/main') ? 'text-blue-600':'' }}"
                href="{{ route('gm-main') }}">Main</a>
-            <a class="hover:underline border border-black lg:border-none {{ request()->is('magic') ? 'text-blue-600':'' }}"
-               href="{{ route('magic') }}">TMP</a>
+            <a class="hover:underline border border-black lg:border-none {{ request()->is('adventures/create') ? 'text-blue-600':'' }}"
+               href="{{ route('adventures.create') }}">C Adventure</a>
+            <a class="hover:underline border border-black lg:border-none {{ request()->is('items/create') ? 'text-blue-600':'' }}"
+               href="{{ route('items.create') }}">C Items</a>
+
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
